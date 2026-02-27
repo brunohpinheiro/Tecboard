@@ -1,0 +1,140 @@
+/* Definição de fontes */
+@font-face {
+    font-family: Unbounded;
+    src: url("../fontes/Unbounded-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url("../fontes/Poppins-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Reset CSS */ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ESTILO DESKTOP */
+body {
+    background-color: #0E1014;
+    color: #FFFFFF;
+}
+
+header img {
+    display: block;
+    margin: 75px 0 0 360px;
+}
+
+h1 {
+    font-size: 64px;
+    font-family: Unbounded, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin: 60px auto 24px ;
+}
+
+h1 span {
+    color: #9747FF;
+}
+
+p {
+    font-family: Poppins, sans-serif;
+    font-size: 24px;
+    text-align:center;
+    margin: 0 auto;
+    width: 792px;
+}
+
+a {
+    color: #FFFFFF;
+    font-size: 24px;
+    font-family: Poppins, sans-serif;
+    text-decoration: none;
+    background-color: #9747FF;
+    width: 340px;
+    height: 66px;
+    display: block;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    padding-right: 24px;   
+    border-radius: 36px; 
+    margin: 40px auto;
+}
+
+a:hover {                           /* < Pseudo-elemento. Elemento com estado (hover)*/
+    background-color: #8233E8;
+}
+
+section img {
+    display: block;
+    width: 792px;
+    height: 446px;
+    margin: 0 auto;
+}
+
+/* ESTILO TABLET */
+@media(max-width: 768px) {
+    header img {
+        margin: 65px 0 0 60px ;
+    }
+    
+    h1 {
+        margin: 171px auto 24px;
+    }
+    
+    p {
+        width: 648px;
+    }
+
+    section img {
+        margin: 0 auto 49px;
+        width: 659px;
+    }
+}
+
+/* ESTILO MOBILE */
+@media (max-width: 375px) {
+    header img {
+        margin: 32px auto 60px 16px;
+    }    
+
+    h1 {
+        margin: 0 17px 24px 17px;
+        width: 341px;
+        font-size: 40px;
+    }
+
+    p {
+        margin: 0 auto 40px;
+        width: 341px;
+        font-size: 20px;
+    }
+
+    a {
+        width: 251px;
+        height: 66px;
+        line-height: 40.2px;
+        font-size: 20px;
+    }
+
+    section img {
+        width: 341px;
+        height: 230px;
+        margin: 0 17px 43.39px;
+    }
+}
+
+
+
+
+
